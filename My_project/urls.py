@@ -19,5 +19,5 @@ from My_project.views import msg_greeting
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', msg_greeting)
+    path('inicio/', msg_greeting)
 ]

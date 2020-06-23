@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} Tora y Halaja {% endblock %}
+
+{% block content %}
+			<aside id="aside_left">
+				<blockquote>Aside left into Tag blockquote<br><strong>Blockquote</strong> se usa para escribir una cita textual o un párrafo exacto y que éste se diferencie del resto del texto. El efecto que nos muestra es que crea unos espacios a la derecha y a la izquierda del texto, para que se diferencie de los demás.</blockquote>
+			</aside>
+			<section id="section_1">
+				<hgroup>
+				<h2>titles (h) into tag: section->hgroup</h2>
+				<h3>{{greeting}}</h3>
+				<h3>{{Date_H}}</h3>
+				<h3>{{Date_utc}}</h3>
+				</hgroup>
+				<article>
+					<p>Paragraph section into tags:->section->Article</p>
+				</article>
+				<article>
+					<header>
+						<h2>title: Lorem Ipsum</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oswTr_IivOM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</article>
+			</section>
+			<aside id="aside_right">
+				<blockquote>Aside right</blockquote>
+				<figure>
+					<img src="{% static 'projectWebApp/img/tag_figure.png' %}"/>
+					<figcaption>
+						<mark>Definition tag figure</mark>
+					</figcaption>
+				</figure>
+			</aside>
+{% endblock %}

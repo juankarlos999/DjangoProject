@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		{% load static %}
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Estudios de Tora y Halaja"/>
+		<meta name="keywords" content="Tora, festividades, parasha, halaja, musar"/>
+		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+		<link rel="stylesheet" href="{% static 'projectWebApp/css3/my_styles.css'%}">
+		<title>
+			{% block title %}{%  endblock %}
+		</title>
+		</head>
+		<body>
+			<header id="header_h1">
+				<h1>Tora y Halaja</h1>
+			</header>
+			<nav>
+				<ul>
+					<li>list menu item 1</li>
+					<li>list menu item 2</li>
+					<li>list menu item 3</li>
+				</ul>
+			</nav>
+
+			{% block content %}
+			{% endblock %}
+
+			<footer id="cust_foot">esto es el footer <address>Info example tel</address></footer>
+			</body>
+	</html>
